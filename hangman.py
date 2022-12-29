@@ -19,6 +19,7 @@ class Bank:
         self.letters_guessed_counter = 0
         self.not_solved = True
         self.letters_already_guessed = []
+        self.api_response_status = self.api_response_status
 
     def pick_topic(self):
         self.current_topic = choice(self.topic_names)
@@ -117,6 +118,7 @@ class Main:
         print('\n')
         if replay.upper() == 'X':
             break
+
 
 Play = Main()
 del Play
