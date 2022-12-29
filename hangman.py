@@ -2,6 +2,8 @@ from random import choice
 import re
 import json
 import requests
+
+
 class Bank:
     colours = ['red', 'blue']
     animals = ['dog', 'cat']
@@ -116,7 +118,5 @@ class Main:
         if replay.upper() == 'X':
             break
 
-
 Play = Main()
-Play
 del Play
